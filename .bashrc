@@ -1,7 +1,7 @@
 # Aliases
 alias gs="git status"
 
-alias gaa="git add all"
+alias gaa="git add -A"
 
 gcm () {
 git commit -m $1

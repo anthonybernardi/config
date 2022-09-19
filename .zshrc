@@ -11,6 +11,7 @@ setopt PROMPT_SUBST
 PROMPT='%{$fg[cyan]%}%~%{$reset_color%} %{$fg[magenta]%}${vcs_info_msg_0_} %{$reset_color%}> '
 
 # Git aliases
+alias gp="git pull"
 alias gs="git status"
 alias gaa="git add -A"
 gcm() {
@@ -18,6 +19,12 @@ gcm() {
 }
 ga() {
     git add $1
+}
+gc() {
+    git checkout $1
+}
+gb() {
+    git checkout -b $1
 }
 
 # aliases for editing and sourcing this file
